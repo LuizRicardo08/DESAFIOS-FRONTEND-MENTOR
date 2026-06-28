@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+:root{
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-titulos: 'Young Serif', serif;
+    --fonte-principal: 'Outfit', sans-serif;
+
+    --cor-background: #F3E5D8;
+    --cor-titulo-principal: #333130;
+    --cor-section: #FFF7FC;
+    --cor-titulo2: #81442F;
+    --cor-titulo3: #712F49;
+    --cor-fonte: #a4573d;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: var(--cor-background);
+    font-family: var(--fonte-padrao);
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+main{
+    font-family: var(--fonte-principal);
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    line-height: 2em;
+    border-radius: 0px 0px 20px 20px;
+    color: var(--cor-fonte);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.296);
+}
+
+main > h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--cor-titulo-principal);
+    font-family: var(--fonte-titulos);
+}
+
+main h2{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: var(--cor-titulo2);
+    font-family: var(--fonte-titulos);
+}
+
+section{
+    background-color: var(--cor-section);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+section h3{
+    color: var(--cor-titulo3);
+    padding-bottom: 10px;
+}
+
+ul, ol{
+    list-style-position: inside;
+}
+
+ol > li{
+    padding-bottom: 20px;
+}
+
+ol > li::marker{
+    font-weight: bolder;
+}
+
+span{
+    font-weight: bolder;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+td{
+    border-bottom: 1px solid var(--cor-fonte);
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte);
+    margin-top: 10px;
+}
+
+footer p{
+    padding: 7px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+    font-weight: bolder;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
