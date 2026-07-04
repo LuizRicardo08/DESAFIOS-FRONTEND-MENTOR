@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --cor-base: #DFE8FF;
+    --cor-botao: #382AE1;
+    --cor-botao-sombra: #392ae14b;
+    --cor-botao-ativo: #766CF1;
+    --cor-fundo-main: white;
+    --cor-fundo-div: #F8F9FE;
+
+    --fonte-base: Arial, Helvetica, sans-serif;
+    --fonte-principal: "Red Hat Display", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: var(--cor-base);
+    font-family: var(--fonte-base);
+    line-height: 1.7em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+main{
+    background-color: var(--cor-fundo-main);
+    font-family: var(--fonte-principal);
+    max-width: 530px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.foto{
+    height: 30px;
+    margin: -20px -20px 0px;
+    background-image: url('images/illustration-hero.svg');
+    height: 220px;
+    border-radius: 15px 15px 0px 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+main h1{
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+main > p{
+    text-align: center;
+    max-width: 65%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.plano{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--cor-fundo-div);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 60%;
+    margin: auto;
+}
+
+.plano a{
+    font-weight: 700;
+    color: var(--cor-botao);
+    transition: 0.3s;
+}
+
+.plano a:hover{
+    text-decoration: none;
+    color: var(--cor-botao-ativo);
+}
+
+.titulo{
+    font-weight: 800;
+}
+
+.botoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 70%;
+    margin: auto;
+}
+
+.botoes button{
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: var(--fonte-principal);
+    letter-spacing: 0.7px;
+}
+
+.prosseguir{
+    background-color: var(--cor-botao);
+    color: white;
+    font-weight: 900;
+    transition: 0.3s;
+    box-shadow: 0px 10px 10px var(--cor-botao-sombra) ;
+}
+
+.prosseguir:hover{
+    background-color: var(--cor-botao-ativo);
+    cursor: pointer;
+}
+
+.cancelar{
+    background-color: transparent;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.504);
+    transition: 0.3s;
+}
+
+.cancelar:hover{
+    color: rgba(0, 0, 0, 0.764);
+    cursor: pointer;
+}
