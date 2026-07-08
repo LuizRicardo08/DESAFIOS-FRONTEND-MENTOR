@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    section{
+        width: 650px;
+        height: 466px;
+    }
+
+    .imagem{
+        background-image: url('../images/image-product-desktop.jpg');
+        background-position: top center;
+
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .conteudo{
+        float: right;
+        width: 50%;
+    }
+}
