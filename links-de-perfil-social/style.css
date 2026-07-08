@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-fundo: #141414;
+    --cor-section: #1F1F1F;
+    --cor-botoes: #333333;
+    --cor-destaque: #C4F82A;
+
+    --fonte-principal: "Inter", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+body{
+    margin: 10px;
+    position: relative;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    background-color: var(--cor-section);
+    color: white;
+    width: 80vw;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 510px;
+}
+
+section img{
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    height: 110px;
+}
+
+section h1{
+    font-family: var(--fonte-principal);
+    font-size: 2em;
+    padding-top: 30px;
+}
+
+.local{
+    color: var(--cor-destaque);
+    font-weight: bold;
+    padding-top: 12px;
+    font-size: 1.2em;
+}
+
+.descricao{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+section p{
+    font-family: var(--fonte-principal);
+}
+
+section a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-botoes);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+section a:hover{
+    background-color: var(--cor-destaque);
+    color: black;
+}
