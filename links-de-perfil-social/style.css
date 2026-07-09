@@ -24,12 +24,13 @@ body{
     justify-content: center;
     align-items: center;
 
-    margin: 10px;
     min-height: 100vh;
     background-color: var(--cor-fundo);
 }
 
 section{
+    margin-top: 7px;
+    margin-bottom: 7px;
     background-color: var(--cor-section);
     color: white;
     width: 80vw;
