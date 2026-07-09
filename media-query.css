@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+:root{
+    --cor-grdiente1: #082765;
+    --cor-grdiente2: #194fba;
+}
+
+@media screen and (min-width: 650px){
+    body{
+        background-image: linear-gradient(45deg, var(--cor-grdiente1), var(--cor-grdiente2));
+    }
+}
