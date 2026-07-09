@@ -20,17 +20,18 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin: 10px;
-    position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--cor-fundo);
 }
 
 section{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+    margin-bottom: 5px;
+    margin-top: 5px;
 
     background-color: var(--cor-section);
     color: white;
