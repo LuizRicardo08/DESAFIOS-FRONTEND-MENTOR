@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 750px) {
+    body{
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        width: 70vw;
+        height: 440px;
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 650px;
+    }
+
+    .seu-resultado{
+        float: left;
+        width: 50%;
+        height: 100%;
+        border-radius: 20px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .conteudo-main{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+}
