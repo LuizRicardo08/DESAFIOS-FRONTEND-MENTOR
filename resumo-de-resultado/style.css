@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --cor-body: #ECF2FF;
-
     --cor1-gradiente-resultado: #312CE9;
     --cor2-gradiente-resultado: #6743FD;
     
@@ -36,15 +34,16 @@
 }
 
 body{
-    min-height: 100vh;
-    background-color: var(--cor-body);
+    height: 100vh;
+    background-color: white;
 }
 
 main{
     background-color: white;
     margin: auto;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.244);
     max-width: 500px;
+
+    transition: width 0.3s, height 0.3s;
 }
 
 /* Div resultado */

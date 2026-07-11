@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+:root{
+    --cor-body: #ECF2FF;
+}
+
+@media screen and (min-width: 500px) {
+    body{
+        background-color: var(--cor-body);
+    }
+
+    main{
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.244);
+    }
+}
+
 @media screen and (min-width: 750px) {
     body{
         height: 100vh;
@@ -7,6 +21,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: var(--cor-body);
     }
 
     main{
@@ -15,6 +30,7 @@
         border-radius: 20px;
         overflow: hidden;
         max-width: 650px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.244);
     }
 
     .seu-resultado{
