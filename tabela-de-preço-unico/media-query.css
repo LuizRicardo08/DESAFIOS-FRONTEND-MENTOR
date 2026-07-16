@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 900px) {
+    section{
+        width: 700px;
+    }
+
+    .baixo{
+        display: flex;
+    }
+
+    .assinatura, .resto{
+        width: 50%;
+    }
+}
