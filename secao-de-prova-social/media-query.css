@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1000px) {
+    section{
+        padding: 70px;
+    }
+
+    .cima{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .conteudo-section > h1{
+        text-align: left;
+        font-size: 3em;
+        padding: 0px;
+        padding-bottom: 20px;
+        margin: 0px;
+    }
+
+    .conteudo-section > p{
+        text-align: left;
+        font-size: 1.5em;
+    }
+
+    .container-ava{
+        display: flex;
+        flex-flow: column;
+        gap: 15px;
+        width: 50%;
+    }
+
+    .avaliacao{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px;
+        align-items: center;
+        max-width: 70%;
+        margin: 0px;
+    }
+
+    .avaliacao > p{
+        line-height: 1.2em;
+        
+    }
+
+    .estrelas{
+        padding: 0px;
+    }
+
+    #ava1{
+        align-self: flex-start;
+    }
+
+    #ava2{
+        align-self: center;
+    }
+
+    #ava3{
+        align-self: flex-end;
+    }
+
+    .diagonal{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 0px;
+        padding-top: 30px;
+        height: 300px;
+    }
+
+    .bloco{
+        max-width: 300px;
+        max-height: 250px;
+        margin: 0px;
+    }
+
+    #bloco1{
+        align-self: flex-start;
+    }
+
+    #bloco2{
+        align-self: center;
+    }
+
+    #bloco3{
+        align-self: flex-end;
+    }
+}
