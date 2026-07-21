@@ -1,0 +1,579 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root{
+    --cor-neutral-900: hsl(33, 15%, 15%);
+    --cor-neutral-800: hsl(33, 22%, 20%);
+    --cor-neutral-700: hsl(32, 20%, 29%);
+    --cor-neutral-600: hsl(33, 17%, 41%);
+    --cor-neutral-400: hsl(36, 22%, 86%);
+    --cor-neutral-200: hsl(30, 24%, 93%);
+    --cor-neutral-100: hsl(35, 60%, 96%);
+    --cor-neutral-50: hsl(40, 60%, 98%);
+    --cor-neutral-0: hsl(0, 0%, 100%);
+
+    --cor-sun-500: hsl(42, 83%, 58%);
+    --cor-sun-300: hsl(44, 84%, 75%);
+    --cor-sun-200: hsl(45, 100%, 74%);
+    --cor-sun-50: hsl(41, 100%, 93%);
+
+    --cor-terracotta-700: hsl(15, 69%, 37%);
+    --cor-terracotta-600: hsl(15, 74%, 41%);
+    --cor-terracotta-500: hsl(18, 62%, 47%);
+    --cor-terracotta-400: hsl(22, 72%, 56%);
+
+    --cor-blue-500: hsl(230, 49%, 56%);
+    --cor-rose-500: hsl(340, 48%, 52%);
+
+    --fonte-fraunces: "Fraunces", serif;
+    --fonte-dmsans: "DM Sans", sans-serif;
+    --fonte-dmmono: "DM Mono", monospace;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--cor-neutral-100);
+    overflow: auto;
+}
+
+.barra-navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--cor-neutral-400);
+    height: 7vh;
+    padding: 40px 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo > p{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-fraunces);
+    font-style: italic;
+    color: var(--cor-terracotta-500);
+    font-size: 1.4em;
+}
+
+.logo > p > span{
+    font-style: normal;
+    color: var(--cor-neutral-800);
+}
+/* Menu mobile */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    
+    background-color: var(--cor-neutral-100);
+
+    position: fixed;
+
+    inset: 0;
+    z-index: 3;
+    padding: 20px;
+    overflow-y: auto;
+    transition: 0.5s;
+    translate: -100%;
+}
+
+.menu > ul{
+    list-style: none;
+}
+
+.cima-menu > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed var(--cor-neutral-400);
+    padding-bottom: 15px;
+}
+
+.cima-menu > div > .icone-menu{
+    background-image: url('assets/images/icon-close.svg');
+}
+
+li{
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+
+    display: flex;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+li:hover{
+    background-color: white;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: var(--cor-neutral-800);
+    font-family: var(--fonte-dmsans);
+    width: 100%;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: var(--cor-neutral-900);
+    font-weight: bold;
+}
+
+.clima{
+    background-image: url('assets/images/icon-weather.svg'), linear-gradient(45deg, var(--cor-sun-500), var(--cor-sun-300));
+    background-repeat: no-repeat;
+    background-position: right -30px, center;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 350px;
+}
+
+.clima > .temperatura{
+    font-family: var(--fonte-fraunces);
+    font-size: 3em;
+    color: var(--cor-neutral-900);
+    padding: 10px 0px;
+}
+
+.clima > .condicao{
+    font-family: var(--fonte-dmsans);
+    color: var(--cor-neutral-800);
+}
+
+.size{
+    margin-top: 20px;
+    border-top: 2px dashed var(--cor-neutral-400);
+}
+
+.size > p{
+    padding-top: 20px;
+}
+
+.icone-menu{
+    background-image: url('assets/images/icon-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--cor-neutral-600);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.icone-menu:hover{
+    cursor: pointer;
+}
+
+/* Configuracoes main */
+
+main{
+    min-height: 93vh;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+
+header{
+    width: 100%;
+}
+
+.letra-diferente{
+    font-family: var(--fonte-dmmono);
+    color: var(--cor-neutral-700);
+    letter-spacing: 2px;
+}
+
+h1{
+    padding-top: 5px;
+    font-size: 2.5em;
+    color: var(--cor-neutral-900);
+}
+
+h1, span{
+    font-family: var(--fonte-fraunces);
+    font-weight: 550;
+}
+
+.nome{
+    color: var(--cor-terracotta-600);
+    font-style: italic
+}
+
+/* div dos botoes */
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.botoes > button{
+    border: none;
+    padding: 10px;
+    font-family: var(--fonte-dmsans);
+    font-weight: 700;
+    background: none;
+    border-radius: 50px;
+    width: 350px;
+}
+
+.botoes > .imprimir{
+    border: 2px solid var(--cor-neutral-400);
+    color: var(--cor-neutral-900);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botoes > .imprimir:hover{
+    background-color: white;
+}
+
+.botoes > .adicionar{
+    background-color: var(--cor-neutral-900);
+    color: var(--cor-neutral-100);
+    border: 2px solid var(--cor-neutral-900);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.adicionar:hover{
+    background-color: white;
+    color: var(--cor-neutral-900);
+}
+
+/* div dos cartões */
+
+.cartoes{
+    padding: 40px 20px;
+    max-width: 500px;
+}
+
+/* Cartão anfitrião */
+
+.cartao-anfitriao{
+    position: relative;
+    background-image: linear-gradient(45deg, var(--cor-terracotta-600), var(--cor-terracotta-400));
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px var(--cor-neutral-700);
+    transform: rotate(3deg);
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.cartao-anfitriao > .letra-diferente{
+    color: var(--cor-neutral-400);
+}
+
+.cartao-anfitriao > .bem-vinda{
+    border-top: 2px dashed var(--cor-neutral-400);
+    padding-top: 15px;
+    font-size: 0.8em;
+}
+
+.cartao-anfitriao > .titulo-anfitriao{
+    font-family: var(--fonte-fraunces);
+    font-size: 1.2em;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: var(--cor-sun-500);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.titulo-anfitriao > span{
+    display: block;
+    color: var(--cor-neutral-400);
+    font-size: 2.5em;
+}
+
+.texto-anfitriao{
+    font-family: var(--fonte-dmsans);
+    line-height: 1.6em;
+    color: var(--cor-neutral-400);
+    padding-bottom: 50px;
+}
+
+.quarto{
+    font-size: 0.8em;
+    padding-bottom: 7px;
+}
+
+.nome-quarto{
+    font-family: var(--fonte-fraunces);
+    font-size: 1.5em;
+    color: var(--cor-neutral-400);
+}
+
+/* Cartão de recibo */
+
+.cartao-recibo{
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.277);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: 0.3s;
+    transform: rotate(-3deg);
+    z-index: 1;
+}
+
+.cartao-recibo > .cabeca-recibo{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.cabeca-recibo .letra-diferente{
+    font-size: 0.8em;
+    color: var(--cor-neutral-600);
+}
+
+.cabeca-recibo .sua-estadia{
+    font-family: var(--fonte-fraunces);
+    font-size: 1.3em;
+}
+
+.codigo-recibo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.preco-data{
+    border-top: 2px dashed var(--cor-neutral-400);
+    border-bottom: 2px dashed var(--cor-neutral-400);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 10px 0px;
+}
+
+.preco-data > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+}
+
+.preco-data p{
+    font-family: var(--fonte-dmsans);
+}
+
+.preco-data .letra-diferente{
+    font-size: 0.75em;
+}
+
+.preco-data .dia{
+    font-family: var(--fonte-fraunces);
+    font-size: 1.5em;
+    color: var(--cor-neutral-900);
+    text-align: center;
+}
+
+.preco-data .data{
+    color: var(--cor-neutral-600);
+}
+
+.servicos{
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--cor-neutral-800);
+}
+
+.servicos p{
+    font-family: var(--fonte-dmsans);
+}
+
+.itens-servicos{
+    padding-bottom: 10px;
+}
+
+.itens-servicos > p{
+    font-size: 0.85em;
+    color: var(--cor-neutral-900);
+}
+
+.itens-servicos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.itens-servicos > .taxa{
+    color: var(--cor-neutral-600);
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.total > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preco-total{
+    font-family: var(--fonte-fraunces);
+    font-size: 1.8em;
+}
+
+.forma-pagamento{
+    font-size: 0.8em;
+    color: var(--cor-neutral-600);
+}
+
+/* Informações */
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blocos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--cor-neutral-400);
+    height: 300px;
+    max-width: 490px;
+}
+
+.blocos img{
+    padding: 7px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.cabeca-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.assunto{
+    font-family: var(--fonte-fraunces);
+    font-size: 1.6em;
+    color: var(--cor-neutral-900);
+}
+
+.info-complem{
+    font-family: var(--fonte-dmsans);
+    color: var(--cor-neutral-600);
+}
+
+.cabeca-infos > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-assunto{
+    font-family: var(--fonte-dmsans);
+    color: var(--cor-neutral-700);
+    line-height: 1.6em;
+}
+
+.rede-wifi{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cred-wifi{
+    background-color: var(--cor-neutral-200);
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.senha-rede > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.senha-rede button{
+    border: 1px solid var(--cor-neutral-400);
+    padding: 5px;
+    border-radius: 100px;
+    font-family: var(--fonte-dmmono);
+    color: var(--cor-neutral-800);
+    background-color: var(--cor-neutral-100);
+}
+
+.nome-wifi{
+    font-family: var(--fonte-dmsans);
+    color: var(--cor-neutral-800);
+}
+
+.senha-wifi{
+    font-family: var(--fonte-dmsans);
+    color: var(--cor-neutral-800);
+}
+
+.num{
+    font-family: var(--fonte-fraunces);
+    font-size: 1.6em;
+}
+
+.chegada .letra-diferente, .num-chegada{
+    color: var(--cor-terracotta-700);
+}
+
+.chegada img{
+    background-color: var(--cor-terracotta-700);
+}
+
+.wifi > .cabeca-infos .letra-diferente, .num-wifi{
+    color: var(--cor-blue-500);
+}
+
+.wifi img{
+    background-color: var(--cor-blue-500);
+}
+
+.cafe .letra-diferente, .num-cafe{
+    color: var(--cor-rose-500);
+}
+
+.cafe img{
+    background-color: var(--cor-rose-500);
+}

@@ -7,9 +7,24 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <main>
+        <header>
+            <div class="foto-menu">
+                <img src="images/sigma-connect.png" alt="">
+                <i class="fa-solid fa-bars" onclick="menu()"></i>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li>Início</li>
+                    <li>Serviços</li>
+                    <li>Contato</li>
+                    <li>Sobre</li>
+                </ul>
+            </nav>
+        </header>
         <section>
             <!-- Container do cnteúdo de cima da section -->
             <div class="cima">

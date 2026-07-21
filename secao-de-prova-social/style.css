@@ -33,6 +33,61 @@ section{
     padding: 25px;
 }
 
+header{
+    width: 100%;
+}
+
+.foto-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto-menu > img{
+    width: 200px;
+}
+
+i{
+    font-size: 1.5em;
+    color: var(--cor-detaque);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav{
+    padding-top: 10px;
+    display: none;
+}
+
+nav > ul{
+    list-style-position: inside;
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+ul > li{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cor-letra-blocos);
+    width: 80%;
+
+    font-family: var(--fonte-peincipal);
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+ul > li:hover{
+    background-color: var(--cor-detaque);
+    color: white;
+    cursor: pointer;
+}
+
 .conteudo-section > h1{
     font-family: var(--fonte-peincipal);
     text-align: center;

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+:root{
+    --cor-neutral-100: hsl(35, 60%, 96%);
+}
+
+@media screen and (min-width: 1000px) {
+    .barra-navegacao{
+        position: absolute;
+        float: left;
+        width: 20vw;
+        height: 150vh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        border: none;
+        border-right: 1px solid var(--cor-neutral-400);
+    }
+
+    .icone-menu{
+        display: none;
+    }
+
+    .menu{
+        position: relative;
+        display: flex;
+        translate: 0%;
+        overflow-y: hidden;
+        width: 100%;
+        padding: 0;
+        padding-top: 10px;
+        height: 100%;
+        border-top: 1px solid var(--cor-neutral-400);
+        margin-top: 25px;
+    }
+
+    .cima-menu > div{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+
+    header h1{
+        padding: 0px;
+    }
+
+    .botoes{
+        width: 40%;
+        align-items: center;
+        padding: 0;
+    }
+
+    main{
+        float: right;
+        width: 80%;
+    }
+
+    .cartoes{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1000px;
+        background-image: url('assets/images/illustration-sun.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+    }
+
+    .cartoes:hover{
+        .cartao-recibo{
+            transform: translate(-30%);
+            rotate: 5deg;
+        }
+
+        .cartao-anfitriao{
+            transform: translate(30%);
+            rotate: -5deg;
+        }
+    }
+
+    .cartao-anfitriao{
+        max-width: 400px;
+        transform: rotate(3deg);
+        translate: -2%;
+    }
+
+    .cartao-recibo{
+        width: 400px;
+        transform: rotate(-3deg);
+        translate: 2%;
+    }
+
+    .informacoes{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .blocos{
+        width: 400px;
+    }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de reserva de hotel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body id="corpo">
+    <!-- Início da barra lateral -->
+
+    <section class="barra-navegacao">
+        <div class="logo">
+            <img src="assets/images/icon-sun.svg" alt=""><p>Maison <span class="soliel">Soleil</span></p>
+        </div>
+
+        <nav class="menu" id="menu">
+            <div class="cima-menu">
+                <div>
+                    <div class="logo"><img src="assets/images/icon-sun.svg" alt=""><p>Maison <span class="soliel">Soleil</span></p></div>
+                    <div class="icone-menu" onclick="clique()"></div>
+                </div>
+                
+                <ul class="nav-list">
+                    <li><img src="assets/images/icon-bed.svg" alt=""><a href="#">Sua estadia</a></li>
+                    <li><img src="assets/images/icon-house.svg" alt=""><a href="#">A casa</a></li>
+                    <li><img src="assets/images/icon-pin.svg" alt=""><a href="#">Pela cidade</a></li>
+                    <li><img src="assets/images/icon-breakfast-outline.svg" alt=""><a href="#">Café da manhã</a></li>
+                    <li><img src="assets/images/icon-mail.svg" alt=""><a href="#">Mensagens</a></li>
+                </ul>
+            </div>
+
+            <div class="baixo-menu">
+                <div class="clima">
+                    <p class="letra-diferente">HOJE EM CASSIS</p>
+                    <p class="temperatura">27°</p>
+                    <p class="condicao">Ensolarado · brisa leve</p>
+                </div>
+
+                <div class="size"> 
+                    <p class="letra-diferente">Fundada em 1987</p> 
+                    <p class="letra-diferente">Maison Soleil · 12 Rue des Oliviers · Cassis</p> 
+                    <p class="letra-diferente">© 2026 Maison Soleil</p> 
+                </div>
+            </div>
+        </nav>
+
+        <div class="icone-menu" onclick="clique()"></div>
+    </section>
+
+    <!-- Fim da barra lateral -->
+
+    <!-- Início do conteúdo principal -->
+
+    <main>
+        <header>
+            <div>
+                <p class="letra-diferente reserva">RESERVA · CONFIRMADA</p>
+                <h1>Bienvenue, <span class="nome">Lucia.</span></h1>
+            </div>
+
+            <div class="botoes">
+                <button class="imprimir">Imprimir recibo</button>
+                <button class="adicionar">Adicionar ao calendário</button>
+            </div>
+        </header>
+
+        <!-- Início dos cartões de reserva -->
+        <!-- Cartão de recibo -->
+
+        <div class="cartoes">
+            <!-- Imagem do código de barras -->
+            <!-- Cartão com mensagem do anfitrião -->
+            <div class="cartao-anfitriao">
+                <p class="letra-diferente bem-vinda">BEM-VINDA</p>
+                <p class="titulo-anfitriao">Uma mensagem da sua anfitriã, <span>Margaux.</span></p>
+                <p class="texto-anfitriao">Estamos muito felizes com a sua vinda. As janelas estarão abertas, a limonada gelada e o gato — Poivre — fingindo não notar sua presença.</p>
+                <p class="letra-diferente quarto">QUARTO</p>
+                <p class="nome-quarto">La Garrigue</p>
+            </div>
+
+            <!-- Cartão de recibo -->
+
+            <div class="cartao-recibo">
+                <div class="cabeca-recibo">
+                    <div>
+                        <p class="letra-diferente">RECIBO</p>
+                        <p class="sua-estadia">Sua estadia</p>
+                    </div>
+                    <div class="codigo-recibo">
+                        <p class="letra-diferente">Nº MS-2026</p>
+                        <p class="letra-diferente">0421-AH</p>
+                    </div>
+                </div>
+                <div class="preco-data">
+                    <div>
+                        <p class="letra-diferente">CHECK-IN</p>
+                        <p class="dia">25 de abr.</p>
+                        <p class="data">Sáb · 15:00</p>
+                    </div>
+                    <div>
+                        <p class="letra-diferente">CHECK-OUT</p>
+                        <p class="dia">29 de abr.</p>
+                        <p class="data">Qua · 11:00</p>
+                    </div>
+                </div>
+                <div class="servicos">
+                    <div class="itens-servicos">
+                        <p>Quarto · La Garrigue · 4 noites</p>
+                        <p>€ 620,00</p>
+                    </div>
+                    <div class="itens-servicos">
+                        <p>Café da manhã · 2 hóspedes</p>
+                        <p>€ 96,00</p>
+                    </div>
+                    <div class="itens-servicos">
+                        <p class="taxa">Taxa de turismo</p>
+                        <p class="taxa">€ 14,40</p>
+                    </div>
+                </div>
+                <div class="total">
+                    <div>
+                        <p class="letra-diferente">TOTAL PAGO</p>
+                        <p class="preco-total">€ 730,40</p>
+                    </div>
+                    <div>
+                        <p class="letra-diferente forma-pagamento">PAGO·WISE·GBP</p>
+                        <img src="assets/images/icon-barcode.svg" alt="Código de barras">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim dos cartões de reserva -->
+        <!-- Início da linha de informações do hóspede -->
+        <!-- Chegada -->
+        
+        <div class="informacoes">
+            <div class="blocos chegada">
+                <div class="cabeca-infos">
+                    <div>
+                        <img src="assets/images/icon-key.svg" alt="">
+                        <p class="letra-diferente titulo-info">CHEGADA</p>
+                    </div>
+                    <p class="num num-chegada">01</p>
+                </div>
+
+                <p class="assunto">Check-in a partir das 15:00</p>
+                <p class="info-complem">25 de abril</p>
+
+                <p class="info-assunto">Toque a campainha de latão ao lado da porta azul. Se estivermos no mercado, a chave estará no vaso de terracota junto à oliveira.</p>
+            </div>
+
+            <!-- Wi-Fi -->
+            <div class="blocos wifi">
+                <div class="cabeca-infos">
+                    <div>
+                        <img src="assets/images/icon-wifi.svg" alt="">
+                        <p class="letra-diferente titulo-info">WI-FI</p>
+                    </div>
+                    <p class="num num-wifi">02</p>
+                </div>
+                
+                <p class="assunto">Le Soleil · Guest</p>
+                <p class="info-complem">Senha abaixo</p>
+
+                <div class="rede-wifi">
+                    <div class="cred-wifi nome-rede">
+                        <p class="letra-diferente">REDE</p>
+                        <p class="nome-wifi">Le Soleil · Guest</p>
+                    </div>
+                    <div class="cred-wifi senha-rede">
+                        <p class="letra-diferente">SENHA</p>
+                        <div>
+                            <p class="senha-wifi">soleil-2026</p>
+                            <button class="copiar">COPIAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Café da manhã -->
+            <div class="blocos cafe">
+                <div class="cabeca-infos">
+                    <div>
+                        <img src="assets/images/icon-breakfast.svg" alt="">
+                        <p class="letra-diferente titulo-info">CAFÉ DA MANHÃ</p>
+                    </div>
+                    <p class="num num-cafe">03</p>
+                </div>
+
+                <p class="assunto">Servido das 8h às 10h30</p>
+                <p class="info-complem">No terraço</p>
+
+                <p class="info-assunto">Figos frescos, mel de Marselha, pão de fermentação natural (pain au levain) e café expresso. Opção sem glúten? Deixe um aviso na noite anterior.</p>
+            </div>
+        </div>
+        <!-- Fim da linha de informações do hóspede -->
+        <!-- Fim do conteúdo principal -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
