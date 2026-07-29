@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 590px) {
+    body{
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body{
+        background-image: url('images/bg-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header{
+        padding: 20px;
+    }
+
+    main{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    main > img{
+        max-height: 400px;
+    }
+
+    .conteudo{
+        display: block;
+    }
+
+    .conteudo > h1{
+        text-align: left;
+    }
+
+    .conteudo > p{
+        text-align: left;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 30px;
+    }
+}
