@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --blue-200: hsl(224, 100%, 95%);
+    --blue-400: hsl(220, 100%, 64%);
+    --blue-600: hsl(228, 100%, 60%);
+    --blue-700: hsl(228, 99%, 58%);
+    --black: hsl(0, 0%, 0%);
+
+    --fonte-principal: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+}
+
+body{
+    background-color: var(--blue-600);
+    min-height: 100vh;
+    color: var(--white);
+}
+
+h1, h2{
+    font-weight: 600;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+/* Header */
+
+header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.422);
+    padding: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo do menu */
+.logo-title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+/* Icone de menu */
+.menu-icon{
+    height: 10px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.rows{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+/* Menu de navegação */
+.nav-menu{
+    display: none;
+}
+
+/* Bloco principal */
+.main-block{
+    padding: 2rem 1rem;
+}
+
+.main-block p{
+    line-height: 1.5rem;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+/* Blocos Estatisticas */
+.blocos-estatisticas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.422);
+    height: 40vh;
+}
+
+
+.statistic-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistic-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.statistic-title{
+    font-weight: 500;
+}
+
+.statistic-footer > p{
+    font-weight: 200;
+    font-size: .9rem;
+}
+
+/* Rodapé */
+footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.422);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+footer p{
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}

@@ -70,7 +70,7 @@ section p{
     font-size: 1.1em;
 }
 
-section > a{
+#links > a{
     display: block;
     text-decoration: none;
     color: var(--cor-destaque);
